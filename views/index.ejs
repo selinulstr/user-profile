@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") -%>
+<div class="inner-wrapper">
+   <%- include("partials/menu.ejs") -%>
+   <% if (locals.page) { %>
+
+    <%- include(`partials/${page}.ejs`) -%>
+    <% } %>
+  
+</div>
+
+<div class="footer-div">
+    <footer><%= new Date().getFullYear(); %></footer>
+</div>
+</div>
+</body>
+
+</html>
